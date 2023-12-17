@@ -1,0 +1,33 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="container">
+        Hi
+        <div class="display"></div>
+        Hi2
+        <div class="controls"></div>
+    </div>
+
+    <script type="application/javascript">
+        const container = document.querySelector('#container');
+        // selects the #container div (don't worry about the syntax, we'll get there)
+
+        console.dir(container.firstElementChild);                      
+        // selects the first child of #container => .display
+
+        const controls = document.querySelector('.controls');   
+        // selects the .controls div
+
+        console.log(controls.previousElementSibling);                  
+        // selects the prior sibling => .display
+
+    </script>
+</body>
+</html></html>
